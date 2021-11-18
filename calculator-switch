@@ -1,0 +1,36 @@
+<!-- 사칙연산 계산기 만들기
+    1. 사칙연산 처리를 전문으로 하는 함수 만들기 (switch문 사용)
+
+        function calculator(op, num1, num2) {
+            var result = "";                       // 값 담아줄 빈 변수
+            
+            switch(op) {                           // 매개변수 첫번째에 들어가는 op
+                case "+" :                         // 더하기 연산자
+                    result = num1 + num2;           
+                    break;                         // break 문으로 반복 막아주기
+
+                case "-" :
+                    result = num1 - num2;           
+                    break; 
+
+                case "*" :
+                    result = num1 * num2;           
+                    break; 
+                
+                case "/" :
+                    result = num1 / num2;           
+                    break; 
+
+                default :
+                    result = "지원하지 않는 연산자입니다.";
+            }
+            return result;
+        }
+        
+                                                   // calculator(매개변수1, 매개변수2, 매개변수3) 이 들어간다.
+
+        document.write("1 결과 = " + calculator("+", 20, 10), "<br>");   // 더하기 연산자
+        document.write("2 결과 = " + calculator("-", 20, 10), "<br>");   // 빼기 연산자
+        document.write("3 결과 = " + calculator("*", 20, 10), "<br>");   // 곱하기 연산자
+        document.write("4 결과 = " + calculator("/", 20, 10), "<br>");   // 나누기 연산자
+ -->
