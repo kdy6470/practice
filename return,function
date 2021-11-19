@@ -1,0 +1,19 @@
+<!-- 리턴값으로 함수 사용
+     1. 함수는 어떤값(데이터)이든 리턴 할 수 있다.
+     -> 이는 리턴값으로 함수를 리턴할 수 있다는 의미이다.
+
+     예제)
+     function createHello(){
+         fucntion hello(user){                          // 함수 안에 함수
+             document.write(user + "님 방문을 환영합니다.");
+         }
+         return hello;                                  // 함수 내부의 hello()값을 return 값으로 외부애서 사용 할 수 있게 한다.
+     }
+
+     var result = createHello();                        // result는 createHello() 와 같다.
+     result("김도영");                                  //  result() 함수안에 "김도영"은 hello(user(매개변수))로 갔다.
+     출력값 -> 김도영님 방문을 환영합니다.
+
+     설명 -> createHello() 함수 내부에 있는 hello() 함수를 리턴값으로 하면
+             함수 외부에서 사용할 수 있게 된다.
+-->
