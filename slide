@@ -5,7 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃2</title>
-    <link rel="stylesheet" href="css/layout2.css">
+    <style>
+    /* 초기화 */
+    *{margin: 0; padding: 0; box-sizing: border-box; margin: 0 auto;}
+    ul,li {list-style: none;}
+
+    /* 스타일 */
+    #wrap {width: 1200px; height: 700px; border: 1px solid red;}
+
+    #header {height: 100px; background-color: #ccc;}
+    #logo {width: 20%; height: 100%; background-color:brown; float: left;}
+    #nav {width: 80%; height: 100%; background-color: burlywood; float: right; position: relative;}
+    #menu-box {width: 600px; height: 200px; position: absolute; top: 50px; right: 50px;}
+    #menu-box li {width: 25%; height: 50px; border: 1px solid black; float: left; }
+    #sub-box {width: 25%; height: 150px; border: 1px solid red; position: absolute; top: 50px;}
+    #sub-box li {width: 100%; height: 25%; border: 1px solid red;}
+
+    #slider {height: 300px; background-color: #ddd; overflow: hidden;}
+    #slider div:nth-child(1) {width: inherit; height: inherit; background-color: darkgreen;}
+    #slider div:nth-child(2) {width: inherit; height: inherit; background-color: darkkhaki;}
+    #slider div:nth-child(3) {width: inherit; height: inherit; background-color: darkorange;}
+
+    #section {height: 200px; background-color: #eee;}
+    #section article {width: 33.33333%; height: 100%; border: 1px solid blue; float: left;}
+
+    #footer {height: 100px; background-color: #aaa;}
+    #bottom-logo {width: 20%; height: 100%; background-color: coral; float: left;}
+    #bottom-right {width: 80%; height: 100%; float: right; background-color: cornflowerblue;}
+    #top {width: 100%; height: 50%; background-color: khaki;}
+    #bottom {width: 100%; height: 50%; background-color: cornflowerblue;}
+    </style>
+    
 <body>
     <div id="wrap">
         <div id="header">
@@ -87,5 +117,6 @@
             }
         }, 1000);
     </script>
+    
 </body>
 </html>
