@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃2</title>
+    <link rel="stylesheet" href="css/layout2.css">
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="logo">로고</div>
+            <div id="nav">
+                <ul id="menu-box">
+                    <li>menu1
+                        <ul id="sub-box">
+                            <li>submenu-1</li>
+                            <li>submenu-2</li>
+                            <li>submenu-3</li>
+                            <li>submenu-4</li>
+                        </ul>
+                    </li>
+                    <li>menu2
+                        <ul id="sub-box">
+                            <li>submenu-1</li>
+                            <li>submenu-2</li>
+                            <li>submenu-3</li>
+                            <li>submenu-4</li>
+                        </ul>
+                    </li>
+                    <li>menu3
+                        <ul id="sub-box">
+                            <li>submenu-1</li>
+                            <li>submenu-2</li>
+                            <li>submenu-3</li>
+                            <li>submenu-4</li>
+                        </ul>
+                    </li>
+                    <li>menu4
+                        <ul id="sub-box">
+                            <li>submenu-1</li>
+                            <li>submenu-2</li>
+                            <li>submenu-3</li>
+                            <li>submenu-4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="section">
+            <article>공지사항,갤러리</article>
+            <article>배너</article>
+            <article>바로가기</article>
+        </div>
+
+        <div id="footer">
+            <div id="bottom-logo">로고</div>
+            <div id="bottom-right">
+                <div id="top">하단메뉴</div>
+                <div id="bottom">copyright</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('#slider')
+        const sliderColor = document.querySelectorAll('#slider div')
+
+        index = 0;
+        const timer = setInterval(function(){
+            if(index < sliderColor.length -1){
+                sliderColor[index].style.marginTop = "-300px";
+                index += 1;
+            }else {
+                index = 0;
+                sliderColor[index].style.marginTop = "0px";
+                for(let i = 0; i < sliderColor.length; i++){
+                    sliderColor[i].style.marginTop = "0px";
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
